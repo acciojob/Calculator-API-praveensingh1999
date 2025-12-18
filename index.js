@@ -10,7 +10,7 @@ app.use(express.json())
 
 const LIMIT = 1000000;
 app.get('/', (req, res) => {
-  res.send("Hello world!");
+  res.send(path.join(__dirname + '/main.html'));
 });
 
 //your code here
